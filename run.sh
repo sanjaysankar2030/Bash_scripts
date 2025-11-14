@@ -27,9 +27,9 @@ if [ -s error.log ]; then
     batcat error.log
 else
     gcc *.o -o p
+    delete_o
     echo "NO POTENTIAL ERRORS FOUND "
     echo "Compilation successful."
     ./p
-    delete_o
 fi
 
